@@ -1,0 +1,212 @@
+@import url("https://fonts.google.com/specimen/Spartan");
+
+* {
+  /* font-size: 15px; */
+  font-family: "Spartan", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: url(./images/bg-pattern-top-desktop.svg);
+  background: url(./images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-area {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5% 5% 0% 5%;
+  /* justify-content: space-between; */
+}
+
+.intro {
+  box-sizing: border-box;
+  flex-basis: 50%;
+  padding: 70px;
+}
+.intro h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 15px;
+}
+
+.intro p {
+  color: hsl(303, 10%, 53%);
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.ratings {
+  box-sizing: border-box;
+  /* padding: 70px; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 50%;
+  display: flex;
+}
+
+.ratings div {
+  padding: 20px 30px 20px 30px;
+  border-radius: 10px;
+  background: hsl(300, 24%, 96%);
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.ratings div img {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.ratings div span {
+  margin: 20px;
+  color: hsl(300, 43%, 22%);
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.ratings div:nth-child(1) {
+  align-self: flex-start;
+}
+.ratings div:nth-child(2) {
+  align-self: center;
+}
+.ratings div:nth-child(3) {
+  align-self: flex-end;
+}
+
+.testimonial {
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  padding: 70px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.testimonial #content {
+  box-sizing: border-box;
+  flex-basis: 30%;
+  background: hsl(300, 43%, 22%);
+  padding: 40px 30px 40px 30px;
+  border-radius: 10px;
+}
+
+.testimonial #content:nth-child(1) {
+  align-self: flex-start;
+}
+.testimonial #content:nth-child(2) {
+  align-self: center;
+}
+.testimonial #content:nth-child(3) {
+  align-self: flex-end;
+}
+
+#content div {
+  display: flex;
+}
+
+#content div div {
+  margin-left: 20px;
+  display: block;
+  align-self: center;
+}
+
+#content img {
+  height: 55px;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+#content span {
+  display: block;
+}
+
+#content span:first-child {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 5px;
+}
+
+#content span:nth-child(2) {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+}
+
+#content p {
+  margin-top: 30px;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1024px) {
+  .content-area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .intro {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .ratings {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: normal;
+    align-items: normal;
+    flex-basis: auto;
+    padding: 0px;
+  }
+
+  .ratings div:nth-child(1) {
+    align-self: auto;
+    text-align: center;
+  }
+  .ratings div:nth-child(2) {
+    align-self: auto;
+    text-align: center;
+  }
+  .ratings div:nth-child(3) {
+    align-self: auto;
+    text-align: center;
+  }
+
+  .ratings div span {
+    display: block;
+    margin: 5px 0 0 0;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0;
+  }
+
+  .testimonial #content {
+    margin: 10px auto 10px auto;
+  }
+}

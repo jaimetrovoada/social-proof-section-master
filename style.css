@@ -86,7 +86,7 @@ body {
   flex-wrap: wrap;
 }
 
-.testimonial #content {
+.testimonial .content {
   box-sizing: border-box;
   flex-basis: 30%;
   background: hsl(300, 43%, 22%);
@@ -94,48 +94,48 @@ body {
   border-radius: 10px;
 }
 
-.testimonial #content:nth-child(1) {
+.testimonial .content:nth-child(1) {
   align-self: flex-start;
 }
-.testimonial #content:nth-child(2) {
+.testimonial .content:nth-child(2) {
   align-self: center;
 }
-.testimonial #content:nth-child(3) {
+.testimonial .content:nth-child(3) {
   align-self: flex-end;
 }
 
-#content div {
+.content div {
   display: flex;
 }
 
-#content div div {
+.content div div {
   margin-left: 20px;
   display: block;
   align-self: center;
 }
 
-#content img {
+.content img {
   height: 55px;
   border-radius: 50px;
   box-sizing: border-box;
 }
 
-#content span {
+.content span {
   display: block;
 }
 
-#content span:first-child {
+.content span:first-child {
   font-weight: 700;
   color: hsl(0, 0%, 100%);
   margin-bottom: 5px;
 }
 
-#content span:nth-child(2) {
+.content span:nth-child(2) {
   color: hsl(333, 80%, 67%);
   font-weight: 400;
 }
 
-#content p {
+.content p {
   margin-top: 30px;
   font-weight: 400;
   color: hsl(0, 0%, 100%);
@@ -206,7 +206,7 @@ footer {
     padding: 0;
   }
 
-  .testimonial #content {
+  .testimonial .content {
     margin: 10px auto 10px auto;
   }
 }

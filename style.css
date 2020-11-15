@@ -39,41 +39,46 @@ body {
 
 .ratings {
   box-sizing: border-box;
-  /* padding: 70px; */
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   flex-basis: 50%;
   display: flex;
 }
 
-.ratings div {
+.ratings > div {
   padding: 20px 30px 20px 30px;
   border-radius: 10px;
   background: hsl(300, 24%, 96%);
   margin-bottom: 15px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  align-items: center;
 }
 
-.ratings div img {
-  margin-left: 5px;
-  margin-right: 5px;
+.ratings > div > div {
+  display: inline-block;
+  box-sizing: border-box;
+  background-image: url(./images/icon-star.svg);
+  background-repeat: repeat-x;
+  width: 85px;
+  height: 16px;
+  margin-right: 20px;
 }
-
-.ratings div span {
-  margin: 20px;
+.ratings > div > span {
   color: hsl(300, 43%, 22%);
   font-size: 1.5em;
   font-weight: 700;
 }
 
-.ratings div:nth-child(1) {
+.ratings > div:nth-child(1) {
   align-self: flex-start;
 }
-.ratings div:nth-child(2) {
+.ratings > div:nth-child(2) {
   align-self: center;
 }
-.ratings div:nth-child(3) {
+.ratings > div:nth-child(3) {
   align-self: flex-end;
 }
 
@@ -180,22 +185,32 @@ footer {
     padding: 0px;
   }
 
-  .ratings div:nth-child(1) {
+  .ratings > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ratings > div > div {
+    background-size: auto;
+  }
+
+  .ratings > div:nth-child(1) {
     align-self: auto;
     text-align: center;
   }
-  .ratings div:nth-child(2) {
+  .ratings > div:nth-child(2) {
     align-self: auto;
     text-align: center;
   }
-  .ratings div:nth-child(3) {
+  .ratings > div:nth-child(3) {
     align-self: auto;
     text-align: center;
   }
 
-  .ratings div span {
+  .ratings > div > span {
     display: block;
     margin: 5px 0 0 0;
+    font-size: 1em;
   }
 
   .testimonial {

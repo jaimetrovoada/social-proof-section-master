@@ -188,6 +188,7 @@ footer {
   .ratings > div {
     display: flex;
     flex-direction: column;
+    width: auto;
   }
 
   .ratings > div > div {
